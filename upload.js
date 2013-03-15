@@ -42,8 +42,8 @@ var upload = function (files) {
 		file = files[0];
 
 	callback.load = function() {
-		console.log("Loaded", this.responseText );
 		console.log("Loaded", JSON.parse(this.responseText) );
+		document.getElementById('md5').innerHTML = "MD5:"+JSON.parse(this.responseText).md5;
 	};
 
 	callback.progress = function uploadProgress(e) {

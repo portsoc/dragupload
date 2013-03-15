@@ -17,6 +17,10 @@ body {
 	box-shadow:  0 0.2ex 0.1ex rgba(0,0,0,0.5) inset;
 }
 
+#md5 {
+	font-size: 50%;	
+}
+
 .box:drag-over,
 .box:-webkit-drag-over {
 	background:#C96;

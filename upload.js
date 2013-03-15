@@ -65,7 +65,7 @@ var upload = function (files) {
 	uploadform = document.forms.uploadform;
 
 	fd = new FormData();
-	fd.append("zip", file);
+	fd.append("file", file);
 	fd.append("ua", navigator.userAgent);
 
 	console.log("Aiming to upload file: ", file);

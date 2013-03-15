@@ -1,0 +1,31 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.box {
+	padding: 2em;
+	max-width: 10em;
+	margin: 2em auto;
+	background: #369;
+	text-align: center;
+	border-radius: .2em;
+	color: #EFEFEF;
+	font-weight: bold;
+	font-size: 150%;
+	text-shadow: 0 0.2ex 0.1ex rgba(0,0,0,0.5);
+	box-shadow:  0 0.2ex 0.1ex rgba(0,0,0,0.5) inset;
+}
+
+.box:drag-over,
+.box:-webkit-drag-over {
+	background:#C96;
+}
+
+#rjb * {
+	position: absolute;
+	left:1em;
+	top:1ex;
+	text-decoration: none;
+	color: #369;
+}

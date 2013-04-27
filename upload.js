@@ -37,7 +37,6 @@ var upload = function (files) {
 
 	var
 		fd,
-		xhr,
 		callback = {},
 		file = files[0];
 

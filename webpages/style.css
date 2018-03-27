@@ -1,11 +1,27 @@
+:root {
+    --good: #ff0;
+    --bad: #f00;
+    --norm: #fff;
+}
+
 body {
     font-family: sans-serif;
 }
 
+h1,
+p {
+    padding-left: 1rem;
+}
+
 .box {
-    max-height: 4em;
-    animation: highlight 5s;
+    transform-origin: top;
+    animation: goodness 5s, expand 5s;
     overflow: hidden;
+    background-color: var(--norm);
+}
+
+.error {
+    animation: badness 5s, expand 5s;
 }
 
 .name,
@@ -16,23 +32,45 @@ body {
 }
 
 #reports {
-    display: contents;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .element {
 }
 
-@keyframes highlight {
+@keyframes expand {
     0% {
-        max-height: 0em;
-        background-color: #ff0;
+        max-height: 0;
     }
-    5% {
-        max-height: 4em;
-        background-color: #ff0;
+    10% {
+        max-height: 5em;
     }
     100% {
-        max-height: 4em;
-        background-color: #ffffff;
+        max-height: 5em;
+    }
+}
+
+@keyframes goodness {
+    0% {
+        background-color: var(--good);
+    }
+    5% {
+        background-color: var(--good);
+    }
+    100% {
+        background-color: var(--norm);
+    }
+}
+
+@keyframes badness {
+    0% {
+        background-color: var(--bad);
+    }
+    5% {
+        background-color: var(--bad);
+    }
+    100% {
+        background-color: var(--norm);
     }
 }

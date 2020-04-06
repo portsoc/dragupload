@@ -10,7 +10,14 @@
         "type": "git",
         "url": "git+https://github.com/portsoc/dragupload.git"
     },
-    "keywords": ["drag", "drop", "upload", "js", "javascript", "express"],
+    "keywords": [
+        "drag",
+        "drop",
+        "upload",
+        "js",
+        "javascript",
+        "express"
+    ],
     "author": "Rich Boakes <rjb@boakes.org> (http://boakes.org/)",
     "license": "ISC",
     "bugs": {
